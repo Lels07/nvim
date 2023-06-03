@@ -3,6 +3,6 @@ return {
   ---@param opts cmp.ConfigSchema
   opts = function(_, opts)
     local cmp = require("cmp")
-    opts.sources = cmp.config.sources(vim.list_extend(opts.sources, { { name = "otter" } }))
+    opts.sources = cmp.config.sources(vim.list_extend(opts.sources, { { name = "otter" }, { name = "neorg" } }))
   end,
 }
